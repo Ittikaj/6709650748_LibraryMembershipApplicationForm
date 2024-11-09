@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devixe-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Library Membership Application Form</title>
+    </head>
+    <body>
+        <h1>แบบฟอร์มสมัครสมาชิกห้องสมุด</h1>
+        <form>
+            <label for="ThaiName">ชื่อ-สกุล ภาษาไทย</label>
+            <input type="text" id="ThaiName" required><br>
+            <label for="EnglishName">ชื่อ-สกุล ภาษาอังกฤษ</label>
+            <input type="text" id="EnglishName" required><br>
+
+            <label>เพศ:</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">ชาย</label><br>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">หญิง</label><br>
+            
+            <label for="Student ID" >รหัสนักศึกษา:</label>
+            <input type="text" id="Student ID" name="Student ID" required><br>
+
+            <label for="Faculty">คณะที่ศึกษา:</label>
+            <input type="text" id="Faculty" name="Faculty" required><br>
+
+            <label for="Email">ที่อยู่อีเมล:</label>
+            <input type="email" id="Email" name="Email" required><br>
+
+            <label for="DayOfBirth">วันเดือนปีที่เกิด:</label>
+            <input type="date" id="DayOfBirth" name="DayOfBirth" required><br>
+
+            <label for="Book type interest">ประเภทหนังสือที่สนใจ:</label>
+            <select id="Book type interest" name="Book type interest">
+                <option value="Cartoon">การ์ตูน</option>
+                <option value="Science">วิทยาศาสตร์</option>
+                <option value="History">ประวัติศาสตร์</option>
+                <option value="Other">อื่นๆ</option>
+            </select><br>
+
+            <label for="Newsletter">ต้องการรับข่าวสารจากห้องสมุดทางอีเมลหรือไม่:</label>
+            <input type="checkbox" id="Newsletter" name="Newsletter"><br>
+        </form>
+    </body>
+</html>
